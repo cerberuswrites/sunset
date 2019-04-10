@@ -1,33 +1,62 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Roboto:300');
 
 
 
 body {
-   background-image:url(https://images.unsplash.com/photo-1508020963102-c6c723be5764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0);
+   background-image:url(https://images2.imgbox.com/1e/29/SqSNZwHu_o.jpg);
   background-size:cover;
 }
 
-.scontainer {
-  width:80vw;
-  height:80vh;
+.scredits {
+  width:10vw;
+  height:2vh;
+  background: rgba(0, 0, 0, 0.3);
+  text-align:center;
   margin:0 auto;
-  margin-top:100px;
+  margin-top:50px;
+  padding:20px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 30px;
+}
+
+.scredits a {
+  text-decoration:none;
+  color:#F9F871;
+  font:10px Roboto;
+  font-weight:300;
+  text-transform:uppercase;
+  letter-spacing:5px;
+  transition-duration: 0.5s;
+  cursor:crosshair;
+}
+
+.scredits a:hover {
+  color:#ffa3a4;
+}
+
+.scontainer {
+  width:50%;
+  height:70vh;
+  margin:0 auto;
+  margin-top:50px;
   overflow:auto;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 30px;
 }
 
 .sgradient {
   background-image: linear-gradient( rgba(0,0,0,0), rgba(0,0,0,0.8));
   padding:20px;
-
 }
 
 .sbody {
   text-align:justify;
   padding: 20px;
-  font: 1em PT Sans;
-  line-height:150%;
+  font: 15px PT Sans;
+  line-height:200%;
   color:#eee;
-  white-space:pre-line;
 }
 
 .stext {
@@ -61,4 +90,58 @@ background-clip:text;
 
 .torchlight {
   cursor: url('https://images2.imgbox.com/15/63/88s2mTUf_o.png'), auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 1s;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color:#eee;
+  font:12px PT Sans;
+  text-align:center;
+  width:40vw;
+  height:auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 5s ease-in-out;
+  text-transform:uppercase;
+}
+
+.popup a, i {
+  text-decoration:none;
+  font-style:normal;
+  color:#fcab40;
+  cursor:crosshair;
+}
+
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  transition: all 0.5s;
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #bbb;
+}
+.popup .close:hover {
+  color: #fff;
 }
