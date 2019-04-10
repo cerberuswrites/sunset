@@ -52,3 +52,7 @@ background-clip:text;
 .scontainer::-webkit-scrollbar-thumb {
   background:#fcab40;
 }
+
+.torchlight {
+  cursor: url('https://images2.imgbox.com/15/63/88s2mTUf_o.png'), auto;
+}
