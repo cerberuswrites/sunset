@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+
+
+body {
+   background-image:url(https://images.unsplash.com/photo-1508020963102-c6c723be5764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjI0MX0);
+  background-size:cover;
+}
+
 .scontainer {
-  width:500px;
-  height:500px;
+  width:80vw;
+  height:80vh;
   margin:0 auto;
   margin-top:100px;
   overflow:auto;
-  background-image:url(https://images2.imgbox.com/d7/33/LkIWQSzt_o.png);
-  background-size:750px;
 }
 
 .sgradient {
@@ -19,9 +24,10 @@
 .sbody {
   text-align:justify;
   padding: 20px;
-  font: 12px PT Sans;
+  font: 1em PT Sans;
   line-height:150%;
   color:#eee;
+  white-space:pre-line;
 }
 
 .stext {
